@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F9FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoFluence"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Bloque de Información de Contacto -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/box_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Dirección: Carrer de Sancho de Ávila, 133, Sant Martí, 08018 Barcelona"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📞 Teléfono: +34 935 12 88 22"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📧 Email: secretaria@itbcn.cat"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Bloque de Formulario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/box_background"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Envíanos un Mensaje"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu Correo Electrónico:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text" />
+
+            <EditText
+                android:id="@+id/emailMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:hint="Introduce tu correo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text" />
+
+            <EditText
+                android:id="@+id/tituloMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:hint="Introduce el título" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensaje:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text" />
+
+            <EditText
+                android:id="@+id/cuerpoMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/edit_text_style"
+                android:padding="12dp"
+                android:gravity="top"
+                android:hint="Escribe tu mensaje"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="24dp" />
+
+            <android.widget.Button
+                android:id="@+id/btnEnviarMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_blue"
+                android:paddingVertical="10dp" />
+
+            <TextView
+                android:id="@+id/mensajeConfirmacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Gracias por contactarnos! Te responderemos pronto."
+                android:textColor="#007BFF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

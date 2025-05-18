@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#181A20</color>
+    <color name="box_background">#35383D</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="search_bar_bg">#232428</color>
+    <color name="hint_text">#BBBBBB</color>
+</resources>

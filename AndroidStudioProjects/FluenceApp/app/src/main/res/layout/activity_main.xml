@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="32dp"
+                android:paddingHorizontal="8dp">
+
+                <ImageView
+                    android:id="@+id/logoFluence"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Logo de Fluence" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/contacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contacto"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:id="@+id/iniciarSesion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Iniciar sesión"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Encuentra a los mejores influencers para tu marca"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:gravity="start"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Regístrate como empresa y accede a una red de influencers para impulsar tu negocio.\n\nO regístrate como influencer y descubre nuevas oportunidades de colaboración."
+                android:textSize="14sp"
+                android:textColor="@color/primary_text"
+                android:gravity="start"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <android.widget.Button
+                    android:id="@+id/btnEmpresa"
+                    android:layout_width="176dp"
+                    android:layout_height="48dp"
+                    android:text="Soy una Empresa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:background="@drawable/button_blue"
+                    android:layout_marginEnd="14dp"
+                    android:gravity="center" />
+
+                <android.widget.Button
+                    android:id="@+id/btnInfluencer"
+                    android:layout_width="176dp"
+                    android:layout_height="48dp"
+                    android:text="Soy un Influencer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagenManos"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/apreton" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_ir_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="🏠"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+</FrameLayout>

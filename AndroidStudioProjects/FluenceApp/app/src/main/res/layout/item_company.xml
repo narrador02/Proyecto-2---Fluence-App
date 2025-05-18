@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/box_background"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- Nombre empresa -->
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold" />
+
+    <!-- Indicador de ofertas activas -->
+    <ImageView
+        android:id="@+id/offers_indicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_offer"
+        android:contentDescription="Ofertas activas"
+        android:visibility="gone"
+        android:layout_marginTop="6dp"
+        android:tint="@color/primary_text" />
+
+    <!-- Botones para influencers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:visibility="visible"
+        android:gravity="start">
+
+        <Button
+            android:id="@+id/follow_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Seguir"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@drawable/button_blue" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/notify_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Notificar"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@drawable/button_blue" />
+    </LinearLayout>
+</LinearLayout>

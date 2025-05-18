@@ -1,0 +1,8 @@
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="language">Language</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_enabled">Notifications enabled</string>
+    <string name="notifications_disabled">Notifications disabled</string>
+</resources>

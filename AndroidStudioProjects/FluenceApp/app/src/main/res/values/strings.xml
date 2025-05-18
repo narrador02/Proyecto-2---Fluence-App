@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="tipo_usuario">
+        <item>Empresa</item>
+        <item>Influencer</item>
+    </string-array>
+    <string name="app_name">Fluence App</string>
+        <string name="settings_title">Ajustes</string>
+        <string name="dark_mode">Modo oscuro</string>
+        <string name="language">Idioma</string>
+        <string name="notifications">Notificaciones</string>
+        <string name="notifications_enabled">Notificaciones activadas</string>
+        <string name="notifications_disabled">Notificaciones desactivadas</string>
+</resources>

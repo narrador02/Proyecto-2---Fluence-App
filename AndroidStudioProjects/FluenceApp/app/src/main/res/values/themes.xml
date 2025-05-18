@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema principal de la app -->
+    <style name="Theme.FluenceApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Tema solo para el splash, sin icono ni animación -->
+    <style name="Theme.FluenceApp.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@null</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:ignore="NewApi">@android:color/white</item>
+        <item name="android:windowSplashScreenBrandingImage" tools:ignore="NewApi">@null</item>
+    </style>
+</resources>

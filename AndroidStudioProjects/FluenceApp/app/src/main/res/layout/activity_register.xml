@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F9FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoFluence"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/subtituloTipoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="start"/>
+
+        <!-- Nombre de usuario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu nombre de usuario"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Correo electrónico -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo electrónico"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu correo"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Teléfono -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/phoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu número de teléfono"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu contraseña"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Confirmar contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar contraseña"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/confirmPasswordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repite tu contraseña"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botón registro -->
+        <android.widget.Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@drawable/button_blue"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Enlace a login -->
+        <TextView
+            android:id="@+id/irALogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ya tengo cuenta. Iniciar sesión."
+            android:textColor="#007BFF"
+            android:textSize="12sp"
+            android:gravity="start"/>
+    </LinearLayout>
+</ScrollView>
